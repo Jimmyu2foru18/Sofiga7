@@ -1,0 +1,97 @@
+/* Custom Animations */
+@keyframes fade-in {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+
+/* Base Styles */
+.animate-fade-in {
+    animation: fade-in 1s ease-out;
+}
+
+/* Social Media Cards */
+.social-card {
+    text-align: center;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.bg-discord {
+    background: linear-gradient(135deg, #7289da 0%, #4752c4 100%);
+}
+
+.bg-youtube {
+    background: linear-gradient(135deg, #ff0000 0%, #cc0000 100%);
+}
+
+.bg-twitch {
+    background: linear-gradient(135deg, #9146ff 0%, #6441a5 100%);
+}
+
+/* Python Info Card Animation */
+.python-info-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2);
+}
+
+/* Game Container Styles */
+.game-container {
+    max-width: 800px;
+    margin: 0 auto;
+    user-select: none; /* Prevent text selection */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+#snakeGame {
+    background-color: rgba(0, 0, 0, 0.3);
+    max-width: 100%;
+    height: auto;
+    outline: none; /* Remove focus outline */
+    cursor: pointer;
+}
+
+#snakeGame:focus {
+    outline: 2px solid #9146ff; /* Custom focus indicator */
+    outline-offset: 2px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 1rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .social-card {
+        margin-bottom: 1rem;
+    }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.5);
+}

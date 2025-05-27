@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sofiga7 - Gaming & Science Enthusiast</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gradient-to-br from-purple-900 to-black min-h-screen text-white font-sans">
+    <div class="container mx-auto px-4 py-8">
+        <!-- Hero Section -->
+        <header class="text-center mb-16 animate-fade-in">
+            <h1 class="text-6xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">Sofiga7</h1>
+            <p class="text-xl text-gray-300">Breaking games and laughing about it!</p>
+        </header>
+
+        <!-- Social Media Cards -->
+        <section class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+            <a href="https://discord.gg/Hk7XBT9Y9M" target="_blank" class="social-card discord">
+                <div class="transform hover:scale-105 transition-transform duration-300 bg-discord rounded-lg p-6 shadow-xl hover:shadow-2xl">
+                    <img src="discord.svg" alt="Discord" class="w-16 h-16 mx-auto mb-4">
+                    <h3 class="text-2xl font-bold mb-2">Discord</h3>
+                    <p>Join our community!</p>
+                </div>
+            </a>
+            <a href="https://www.youtube.com/channel/UCa6FT1H-gXhksMmL-m2Vb4A" target="_blank" class="social-card youtube">
+                <div class="transform hover:scale-105 transition-transform duration-300 bg-youtube rounded-lg p-6 shadow-xl hover:shadow-2xl">
+                    <img src="youtube.svg" alt="YouTube" class="w-16 h-16 mx-auto mb-4">
+                    <h3 class="text-2xl font-bold mb-2">YouTube</h3>
+                    <p>Watch my game breaks!</p>
+                </div>
+            </a>
+            <a href="https://www.twitch.tv/sofiga7" target="_blank" class="social-card twitch">
+                <div class="transform hover:scale-105 transition-transform duration-300 bg-twitch rounded-lg p-6 shadow-xl hover:shadow-2xl">
+                    <img src="twitch.svg" alt="Twitch" class="w-16 h-16 mx-auto mb-4">
+                    <h3 class="text-2xl font-bold mb-2">Twitch</h3>
+                    <p>Catch me live!</p>
+                </div>
+            </a>
+        </section>
+
+        <!-- About Me Section -->
+        <section class="mb-16 bg-opacity-20 bg-white backdrop-blur-lg rounded-xl p-8">
+            <h2 class="text-4xl font-bold mb-6 text-center">About Me</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="space-y-4">
+                    <p class="text-lg">Hey there! I'm Sofiga7, a passionate gamer who loves breaking games and sharing the hilarious results with my community. When I'm not exploring game glitches, you'll find me diving into science and hanging out with my beloved ball python, Gimli!</p>
+                    <p class="text-lg">Gimli, my "damp" ball python companion, adds a unique twist to my content creation journey. Together, we create entertaining content that brings smiles to people's faces.</p>
+                </div>
+                <div class="space-y-4">
+                    <h3 class="text-2xl font-bold mb-2">Fun Facts</h3>
+                    <ul class="list-disc list-inside space-y-2">
+                        <li>Classic game enthusiast</li>
+                        <li>Science lover</li>
+                        <li>Proud snake parent</li>
+                        <li>Professional game breaker</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Snake Information Section -->
+        <section class="mb-16 bg-opacity-20 bg-white backdrop-blur-lg rounded-xl p-8">
+            <h2 class="text-4xl font-bold mb-6 text-center">Meet Gimli - The Ball Python</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="space-y-4">
+                    <h3 class="text-2xl font-bold mb-2">Ball Python Facts</h3>
+                    <ul class="list-disc list-inside space-y-2">
+                        <li>Scientific name: Python regius</li>
+                        <li>Known for their docile nature</li>
+                        <li>Can live 20-30 years in captivity</li>
+                        <li>Named for their defensive ball-like posture</li>
+                    </ul>
+                </div>
+                <div class="python-info-card transform hover:scale-105 transition-transform duration-300">
+                    <div class="bg-gradient-to-r from-yellow-600 to-yellow-800 rounded-lg p-6 shadow-xl">
+                        <h3 class="text-2xl font-bold mb-4">Why "Damp"?</h3>
+                        <p class="text-lg">Gimli, affectionately described as "damp," earned this unique nickname through his peculiar yet endearing personality. While ball pythons aren't actually damp, this description perfectly captures Gimli's special character!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Snake Game Section -->
+        <section class="mb-16">
+            <h2 class="text-4xl font-bold mb-6 text-center">Snake Game</h2>
+            <div class="game-container bg-opacity-20 bg-white backdrop-blur-lg rounded-xl p-8 text-center">
+                <canvas id="snakeGame" class="mx-auto border-4 border-purple-500 rounded-lg"></canvas>
+                <div class="mt-4">
+                    <button id="startGame" class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded-full transition-colors duration-300">Start Game</button>
+                    <p class="mt-2 text-lg">Score: <span id="score">0</span></p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
