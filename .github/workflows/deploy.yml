@@ -8,6 +8,8 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write  # Required for deployment to GitHub Pages
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
